@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //Cookie::queue(Cookie::make('test', '123', 60));
-
     return view('welcome');
 });
 

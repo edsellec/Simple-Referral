@@ -31,7 +31,7 @@ class HomeController extends Controller
 
     public function referral_url()
     {
-        return 'http://127.0.0.1:8000/?ref=' . \Hashids::encode(auth()->user()->id);
+        return 'http://127.0.0.1:8000/register/?ref=' . \Hashids::encode(auth()->user()->id);
     }
 
     public function referrer()

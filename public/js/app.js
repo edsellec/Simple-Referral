@@ -66032,7 +66032,7 @@ var ReferralTable = /*#__PURE__*/function (_Component) {
           className: "card-header"
         }, "Referrals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "card-body"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No record of referrals found...")))));
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No record of referrals found")))));
       } else {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "container"
@@ -66175,7 +66175,7 @@ var ReferralTable = /*#__PURE__*/function (_Component) {
           className: "card-header"
         }, "Referrer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "card-body"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No referrer...")))));
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No record of referrer")))));
       } else {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "container"
@@ -66205,21 +66205,19 @@ var ReferralTable = /*#__PURE__*/function (_Component) {
           style: {
             padding: '10px 35px 10px 10px'
           }
-        }, "Email"), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, data.map(function (user) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-            style: {
-              padding: '10px 35px 10px 15px'
-            }
-          }, " ", user.id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-            style: {
-              padding: '10px 35px 10px 15px'
-            }
-          }, " ", user.name, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-            style: {
-              padding: '10px 35px 10px 15px'
-            }
-          }, " ", user.email, " "), " ");
-        })))))));
+        }, "Email"), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          style: {
+            padding: '10px 35px 10px 15px'
+          }
+        }, " ", data['id']), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          style: {
+            padding: '10px 35px 10px 15px'
+          }
+        }, " ", data['name'], " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+          style: {
+            padding: '10px 35px 10px 15px'
+          }
+        }, " ", data['email'], " "), " ")))))));
       }
     }
   }]);

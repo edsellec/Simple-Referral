@@ -31,7 +31,7 @@ export default class ReferralTable extends Component {
             <div className="card">
               <div className="card-header">Referrer</div>
               <div className="card-body">
-                <p>No referrer...</p>
+                <p>No record of referrer</p>
               </div>
             </div>
           </div>
@@ -52,11 +52,9 @@ export default class ReferralTable extends Component {
                     <th style={{padding: '10px 35px 10px 10px'}}>Email</th> </tr>
                   </thead>
                   <tbody>
-                  {data.map(user =>(
-                    <tr> <td style={{padding: '10px 35px 10px 15px'}}> {user.id}</td>
-                    <td style={{padding: '10px 35px 10px 15px'}}> {user.name} </td>
-                    <td style={{padding: '10px 35px 10px 15px'}}> {user.email} </td> </tr>
-                  ))}
+                  <tr> <td style={{padding: '10px 35px 10px 15px'}}> {data['id']}</td>
+                  <td style={{padding: '10px 35px 10px 15px'}}> {data['name']} </td>
+                  <td style={{padding: '10px 35px 10px 15px'}}> {data['email']} </td> </tr>
                   </tbody>
                 </table>
               </div>

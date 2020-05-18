@@ -31,7 +31,7 @@ export default class ReferralTable extends Component {
             <div className="card">
               <div className="card-header">Referrals</div>
               <div className="card-body">
-                <p>No record of referrals found...</p>
+                <p>No record of referrals found</p>
               </div>
             </div>
           </div>

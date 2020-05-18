@@ -66,7 +66,6 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $cookie = Cookie::get('referral');
-
         $referred_by = $cookie ? \Hashids::decode($cookie)[0] : null;
 
         return User::create([
