@@ -3,8 +3,12 @@ import ReactDOM from "react-dom";
 
 require('./bootstrap');
 
-import ReactDataTableApp from './ReactDataTableApp';
+import ReactReferralTableApp from './ReactReferralTableApp';
+import ReactReferrerTableApp from './ReactReferrerTableApp';
 
-if (document.getElementById('datatable')) {
-  ReactDOM.render(<ReactDataTableApp />, document.getElementById('datatable'));
+if (document.getElementById('referral_table')) {
+  ReactDOM.render(<ReactReferralTableApp />, document.getElementById('referral_table'));
+}
+if (document.getElementById('referrer_table')) {
+  ReactDOM.render(<ReactReferrerTableApp />, document.getElementById('referrer_table'));
 }

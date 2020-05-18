@@ -65733,19 +65733,19 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/ReactDataTableApp.js":
-/*!*******************************************!*\
-  !*** ./resources/js/ReactDataTableApp.js ***!
-  \*******************************************/
+/***/ "./resources/js/ReactReferralTableApp.js":
+/*!***********************************************!*\
+  !*** ./resources/js/ReactReferralTableApp.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReactDataTableApp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReactReferralTableApp; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_DataTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/DataTable */ "./resources/js/components/DataTable.js");
+/* harmony import */ var _components_ReferralTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ReferralTable */ "./resources/js/components/ReferralTable.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65771,29 +65771,96 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var ReactDataTableApp = /*#__PURE__*/function (_Component) {
-  _inherits(ReactDataTableApp, _Component);
+var ReactReferralTableApp = /*#__PURE__*/function (_Component) {
+  _inherits(ReactReferralTableApp, _Component);
 
-  var _super = _createSuper(ReactDataTableApp);
+  var _super = _createSuper(ReactReferralTableApp);
 
-  function ReactDataTableApp(props) {
-    _classCallCheck(this, ReactDataTableApp);
+  function ReactReferralTableApp(props) {
+    _classCallCheck(this, ReactReferralTableApp);
 
     return _super.call(this, props);
   }
 
-  _createClass(ReactDataTableApp, [{
+  _createClass(ReactReferralTableApp, [{
     key: "render",
     value: function render() {
       var columns = ['id', 'name', 'email'];
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DataTable__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ReferralTable__WEBPACK_IMPORTED_MODULE_1__["default"], {
         url: "/api/users",
         columns: columns
       });
     }
   }]);
 
-  return ReactDataTableApp;
+  return ReactReferralTableApp;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/ReactReferrerTableApp.js":
+/*!***********************************************!*\
+  !*** ./resources/js/ReactReferrerTableApp.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReactReferrerTableApp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_ReferrerTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ReferrerTable */ "./resources/js/components/ReferrerTable.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var ReactReferrerTableApp = /*#__PURE__*/function (_Component) {
+  _inherits(ReactReferrerTableApp, _Component);
+
+  var _super = _createSuper(ReactReferrerTableApp);
+
+  function ReactReferrerTableApp(props) {
+    _classCallCheck(this, ReactReferrerTableApp);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(ReactReferrerTableApp, [{
+    key: "render",
+    value: function render() {
+      var columns = ['id', 'name', 'email'];
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ReferrerTable__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        url: "/api/users",
+        columns: columns
+      });
+    }
+  }]);
+
+  return ReactReferrerTableApp;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
@@ -65813,7 +65880,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ReactDataTableApp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ReactDataTableApp */ "./resources/js/ReactDataTableApp.js");
+/* harmony import */ var _ReactReferralTableApp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ReactReferralTableApp */ "./resources/js/ReactReferralTableApp.js");
+/* harmony import */ var _ReactReferrerTableApp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ReactReferrerTableApp */ "./resources/js/ReactReferrerTableApp.js");
 
 
 
@@ -65821,8 +65889,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-if (document.getElementById('datatable')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReactDataTableApp__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('datatable'));
+
+if (document.getElementById('referral_table')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReactReferralTableApp__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('referral_table'));
+}
+
+if (document.getElementById('referrer_table')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReactReferrerTableApp__WEBPACK_IMPORTED_MODULE_3__["default"], null), document.getElementById('referrer_table'));
 }
 
 /***/ }),
@@ -65872,20 +65945,18 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/DataTable.js":
-/*!**********************************************!*\
-  !*** ./resources/js/components/DataTable.js ***!
-  \**********************************************/
+/***/ "./resources/js/components/ReferralTable.js":
+/*!**************************************************!*\
+  !*** ./resources/js/components/ReferralTable.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DataTable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReferralTable; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65910,249 +65981,250 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+var ReferralTable = /*#__PURE__*/function (_Component) {
+  _inherits(ReferralTable, _Component);
 
-var DataTable = /*#__PURE__*/function (_Component) {
-  _inherits(DataTable, _Component);
+  var _super = _createSuper(ReferralTable);
 
-  var _super = _createSuper(DataTable);
-
-  function DataTable(props) {
+  function ReferralTable(props) {
     var _this;
 
-    _classCallCheck(this, DataTable);
+    _classCallCheck(this, ReferralTable);
 
     _this = _super.call(this, props);
     _this.state = {
       entities: {
-        data: [],
-        meta: {
-          current_page: 1,
-          from: 1,
-          last_page: 1,
-          per_page: 5,
-          to: 1,
-          total: 1
-        }
-      },
-      first_page: 1,
-      current_page: 1,
-      sorted_column: _this.props.columns[0],
-      offset: 4,
-      order: 'asc'
+        data: []
+      }
     };
     return _this;
   }
 
-  _createClass(DataTable, [{
-    key: "fetchEntities",
-    value: function fetchEntities() {
-      var _this2 = this;
-
-      // We're using axios instead of Fetch
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a // The API we're requesting data from
-      .get("https://127.0.0.1:8000/referrer") // Once we get a response, we'll map the API endpoints to our props
-      .then(function (response) {
-        return response.data.results.map(function (data) {
-          return {
-            id: "".concat(data.id),
-            name: "".concat(data.name),
-            email: "".concat(data.email)
-          };
-        });
-      }) // Let's make sure to change the loading state to display the data
-      .then(function (data) {
-        _this2.setState({
-          data: data,
-          isLoading: false
-        });
-      }) // We can still use the `.catch()` method since axios is promise-based
-      ["catch"](function (error) {
-        return _this2.setState({
-          error: error,
-          isLoading: false
-        });
-      });
-    }
-  }, {
-    key: "changePage",
-    value: function changePage(pageNumber) {
-      var _this3 = this;
-
-      this.setState({
-        current_page: pageNumber
-      }, function () {
-        _this3.fetchEntities();
-      });
-    }
-  }, {
-    key: "columnHead",
-    value: function columnHead(value) {
-      return value.split('_').join(' ').toUpperCase();
-    }
-  }, {
-    key: "pagesNumbers",
-    value: function pagesNumbers() {
-      if (!this.state.entities.meta.to) {
-        return [];
-      }
-
-      var from = this.state.entities.meta.current_page - this.state.offset;
-
-      if (from < 1) {
-        from = 1;
-      }
-
-      var to = from + this.state.offset * 2;
-
-      if (to >= this.state.entities.meta.last_page) {
-        to = this.state.entities.meta.last_page;
-      }
-
-      var pagesArray = [];
-
-      for (var page = from; page <= to; page++) {
-        pagesArray.push(page);
-      }
-
-      return pagesArray;
-    }
-  }, {
+  _createClass(ReferralTable, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this4 = this;
+      var _this2 = this;
 
-      this.setState({
-        current_page: this.state.entities.meta.current_page
-      }, function () {
-        _this4.fetchEntities();
-      });
-    }
-  }, {
-    key: "tableHeads",
-    value: function tableHeads() {
-      var _this5 = this;
-
-      var icon;
-
-      if (this.state.order === 'asc') {
-        icon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-          className: "fas fa-arrow-up"
+      fetch('http://127.0.0.1:8000/referrals').then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        _this2.setState({
+          isLoaded: true,
+          data: json
         });
-      } else {
-        icon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-          className: "fas fa-arrow-down"
-        });
-      }
-
-      return this.props.columns.map(function (column) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-          className: "table-head",
-          key: column,
-          onClick: function onClick() {
-            return _this5.sortByColumn(column);
-          }
-        }, _this5.columnHead(column), column === _this5.state.sorted_column && icon);
-      });
-    }
-  }, {
-    key: "userList",
-    value: function userList() {
-      if (this.state.entities.data.length) {
-        return this.state.entities.data.map(function (users) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-            key: users.id
-          }, Object.keys(users).map(function (key) {
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-              key: key
-            }, users[key]);
-          }));
-        });
-      } else {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-          colSpan: this.props.columns.length,
-          className: "text-center"
-        }, "No Records Found."));
-      }
-    }
-  }, {
-    key: "sortByColumn",
-    value: function sortByColumn(column) {
-      var _this6 = this;
-
-      if (column === this.state.sorted_column) {
-        this.state.order === 'asc' ? this.setState({
-          order: 'desc',
-          current_page: this.state.first_page
-        }, function () {
-          _this6.fetchEntities();
-        }) : this.setState({
-          order: 'asc'
-        }, function () {
-          _this6.fetchEntities();
-        });
-      } else {
-        this.setState({
-          sorted_column: column,
-          order: 'asc',
-          current_page: this.state.first_page
-        }, function () {
-          _this6.fetchEntities();
-        });
-      }
-    }
-  }, {
-    key: "pageList",
-    value: function pageList() {
-      var _this7 = this;
-
-      return this.pagesNumbers().map(function (page) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: page === _this7.state.entities.meta.current_page ? 'page-item active' : 'page-item',
-          key: page
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          className: "page-link",
-          onClick: function onClick() {
-            return _this7.changePage(page);
-          }
-        }, page));
       });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this8 = this;
+      var _this$state = this.state,
+          isLoaded = _this$state.isLoaded,
+          data = _this$state.data;
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "data-table"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
-        className: "table table-bordered"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, this.tableHeads())), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.userList())), this.state.entities.data && this.state.entities.data.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "pagination"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "page-item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "page-link",
-        disabled: 1 === this.state.entities.meta.current_page,
-        onClick: function onClick() {
-          return _this8.changePage(_this8.state.entities.meta.current_page - 1);
-        }
-      }, "Previous")), this.pageList(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "page-item"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "page-link",
-        disabled: this.state.entities.meta.last_page === this.state.entities.meta.current_page,
-        onClick: function onClick() {
-          return _this8.changePage(_this8.state.entities.meta.current_page + 1);
-        }
-      }, "Next")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        style: {
-          marginTop: '8px'
-        }
-      }, " \xA0 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Displaying ", this.state.entities.data.length, " of ", this.state.entities.meta.total, " entries.")))));
+      if (!isLoaded) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row justify-content-left"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-header"
+        }, "Referrals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No record of referrals found...")))));
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row justify-content-left"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-header"
+        }, "Referrals"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+          striped: true,
+          bordered: true,
+          hover: true,
+          border: "1",
+          responsive: true
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+          style: {
+            padding: '10px 35px 10px 15px'
+          }
+        }, "Id No."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+          style: {
+            padding: '10px 35px 10px 10px'
+          }
+        }, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+          style: {
+            padding: '10px 35px 10px 10px'
+          }
+        }, "Email"), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, data.map(function (user) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+            style: {
+              padding: '10px 35px 10px 15px'
+            }
+          }, " ", user.id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+            style: {
+              padding: '10px 35px 10px 15px'
+            }
+          }, " ", user.name, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+            style: {
+              padding: '10px 35px 10px 15px'
+            }
+          }, " ", user.email, " "), " ");
+        })))))));
+      }
     }
   }]);
 
-  return DataTable;
+  return ReferralTable;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ReferrerTable.js":
+/*!**************************************************!*\
+  !*** ./resources/js/components/ReferrerTable.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReferralTable; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var ReferralTable = /*#__PURE__*/function (_Component) {
+  _inherits(ReferralTable, _Component);
+
+  var _super = _createSuper(ReferralTable);
+
+  function ReferralTable(props) {
+    var _this;
+
+    _classCallCheck(this, ReferralTable);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      entities: {
+        data: []
+      }
+    };
+    return _this;
+  }
+
+  _createClass(ReferralTable, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('http://127.0.0.1:8000/referrer').then(function (res) {
+        return res.json();
+      }).then(function (json) {
+        _this2.setState({
+          isLoaded: true,
+          data: json
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          isLoaded = _this$state.isLoaded,
+          data = _this$state.data;
+
+      if (!isLoaded) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row justify-content-left"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-header"
+        }, "Referrer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No referrer...")))));
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "container"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "row justify-content-left"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-header"
+        }, "Referrer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "card-body"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+          striped: true,
+          bordered: true,
+          hover: true,
+          border: "1",
+          responsive: true
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+          style: {
+            padding: '10px 35px 10px 15px'
+          }
+        }, "Id No."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+          style: {
+            padding: '10px 35px 10px 10px'
+          }
+        }, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+          style: {
+            padding: '10px 35px 10px 10px'
+          }
+        }, "Email"), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, data.map(function (user) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+            style: {
+              padding: '10px 35px 10px 15px'
+            }
+          }, " ", user.id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+            style: {
+              padding: '10px 35px 10px 15px'
+            }
+          }, " ", user.name, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+            style: {
+              padding: '10px 35px 10px 15px'
+            }
+          }, " ", user.email, " "), " ");
+        })))))));
+      }
+    }
+  }]);
+
+  return ReferralTable;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
